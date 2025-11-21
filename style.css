@@ -901,7 +901,123 @@ header::before {
 }
 
 /* RESPONSIVE */
+/* @media (max-width: 900px) {
+    .contact-wrapper {
+        flex-direction: column;
+    }
+
+    .contact-form {
+        margin-top: 10px;
+    }
+
+    .contact-text h2 {
+        font-size: 38px;
+    }
+} */
+
+/* ===========================
+   RESPONSIVE DESIGN
+   Laptop / Tablet / Mobile
+   =========================== */
+
+/* --- Medium screens (Laptops & big tablets) --- */
+@media (max-width: 1200px) {
+    header {
+        padding: 16px 8%;
+    }
+
+    .home {
+        padding: 90px 8% 40px;
+    }
+
+    .home-content h1 {
+        font-size: 48px;
+    }
+
+    .about {
+        padding: 90px 8% 70px;
+    }
+}
+
+/* --- Tablets (portrait) & small laptops --- */
 @media (max-width: 900px) {
+    header {
+        padding: 14px 6%;
+    }
+
+    .navbar {
+        gap: 18px;
+    }
+
+    .navbar a {
+        font-size: 15px;
+    }
+
+    .home {
+        flex-direction: column-reverse;  /* image below text */
+        align-items: center;
+        text-align: center;
+        padding: 100px 6% 40px;
+    }
+
+    .home-content {
+        max-width: 100%;
+    }
+
+    .home-img {
+        width: 280px;
+        height: 280px;
+        margin-bottom: 26px;
+    }
+
+    .home-content h1 {
+        font-size: 42px;
+    }
+
+    .home-content p {
+        font-size: 16px;
+    }
+
+    .home-sci a {
+        margin: 20px 10px 25px;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 90px 6% 60px;
+    }
+
+    .about-img img {
+        width: 260px;
+        height: 260px;
+    }
+
+    .about-text p {
+        margin: 15px auto 25px;
+    }
+
+    .services-list {
+        padding: 0 20px;
+        gap: 24px;
+    }
+
+    .service-card {
+        height: auto;
+    }
+
+    .skills-section {
+        padding: 60px 6%;
+    }
+
+    .skills-container {
+        flex-direction: column;
+    }
+
+    .contact {
+        padding: 60px 6%;
+    }
+
     .contact-wrapper {
         flex-direction: column;
     }
@@ -914,5 +1030,79 @@ header::before {
         font-size: 38px;
     }
 }
+
+/* --- Mobile phones --- */
+@media (max-width: 600px) {
+    header {
+        padding: 12px 5%;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .navbar {
+        gap: 10px;
+    }
+
+    .navbar a {
+        font-size: 13px;
+    }
+
+    .home {
+        padding: 90px 5% 30px;
+    }
+
+    .home-content h1 {
+        font-size: 34px;
+    }
+
+    .home-content h3 {
+        font-size: 22px;
+    }
+
+    .home-img {
+        width: 230px;
+        height: 230px;
+    }
+
+    .sub-title {
+        font-size: 34px;
+    }
+
+    .services-list {
+        padding: 0 10px;
+    }
+
+    .container1 {
+        padding: 22px 18px;
+        min-width: auto;
+    }
+
+    .contact-text p {
+        max-width: 100%;
+    }
+
+    .contact-list li {
+        font-size: 13px;
+    }
+}
+
+/* Very small phones (just in case) */
+@media (max-width: 400px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    .navbar a {
+        font-size: 12px;
+    }
+
+    .home-content h1 {
+        font-size: 30px;
+    }
+}
+
 
 
